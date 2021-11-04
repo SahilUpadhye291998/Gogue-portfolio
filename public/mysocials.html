@@ -38,13 +38,29 @@
         }
       }
 
-      .scene {
-        width: 100%;
-        height: 500px;
+      #instaButton {
+        background: url("https://image.freepik.com/free-vector/instagram-background-gradient-colors_23-2147821882.jpg")
+          no-repeat scroll 0 0 transparent;
+        color: white;
       }
 
-      .mainContent {
-        padding-top: 10%;
+      #twitter {
+        background-color: #1da1f2;
+        color: white;
+      }
+
+      #discord {
+        background-color: #7289da;
+        color: white;
+      }
+
+      #youtube {
+        background-color: #ff0000;
+        color: white;
+      }
+
+      .btn {
+        width: 500px;
       }
 
       .nav-link {
@@ -70,7 +86,7 @@
   </head>
   <body class="d-flex h-100 text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="mb-auto">
+      <header>
         <div>
           <h3 class="float-md-start mb-0">MisstaGogue</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -80,51 +96,67 @@
           </nav>
         </div>
       </header>
-
-      <main class="px-3 mainContent" id="mainContent">
+      <div
+        class="
+          container
+          d-flex
+          flex-row
+          justify-content-center
+          align-items-center
+          h-100
+        "
+      >
         <div class="grid">
           <div class="row">
-            <div class="col-xl-8">
-              <div class="row">
-                <div class="grid">
-                  <div class="row pt-5">
-                    <h1>About Me</h1>
-                  </div>
-                  <div class="row">
-                    <p class="lead d-flex justify-content-center">
-                      Hi! I'm Misstagogue, (Call me Gogui since we know each
-                      other 😜) I am french, but will only stream in english
-                      with my thickest accent 😁 I hope to become partner on
-                      Twitch so check me out and join me on my journey!
-                    </p>
-                    <a href="https://www.twitch.tv/Misstagogue"
-                      >Press Me to go to my Twitch</a
-                    >
-                    <p class="lead"></p>
-                  </div>
-                </div>
-              </div>
+            <div class="col-12">
+              <a
+                id="instaButton"
+                target="_blank"
+                href="https://www.instagram.com/misstagogue/"
+                class="btn"
+              >
+                Connect with me on Insta
+              </a>
             </div>
-            <div class="col-xl-4">
-              <div id="GLTFContainer" class="scene"></div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <a
+                id="twitter"
+                target="_blank"
+                href="https://twitter.com/MTagogue"
+                class="btn"
+              >
+                Connect with me on twitter
+              </a>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <a
+                id="discord"
+                target="_blank"
+                href="https://discord.gg/S6nrs67Brf"
+                class="btn"
+              >
+                Join my Discord
+              </a>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <a
+                id="youtube"
+                target="_blank"
+                href="https://www.youtube.com/channel/UC8LnjvMKT661TzuTH-1BneQ"
+                class="btn"
+              >
+                Checkout my youtube channel
+              </a>
             </div>
           </div>
         </div>
-      </main>
-
-      <footer class="mt-auto text-white-50">
-        <p>
-          Testing Website for
-          <a href="https://www.twitch.tv/Misstagogue" class="text-white"
-            >Misstagogue</a
-          >, by <a href="#" class="text-white">Sid</a>.
-        </p>
-      </footer>
+      </div>
     </div>
-    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
-
-    <script type="module" src="./GLTFScript.js"></script>
   </body>
 </html>
