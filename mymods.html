@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>Cover Template · Bootstrap v5.1</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/cover/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .scene {
+        width: 100%;
+        height: 500px;
+      }
+
+      .mainContent {
+        padding-top: 10%;
+      }
+
+      .nav-link {
+        color: yellow !important;
+      }
+
+      .card {
+        background-color: #212529;
+        color: yellow !important;
+        min-height: 100%;
+      }
+
+      a {
+        color: yellow;
+      }
+
+      .amk,
+      .roy,
+      .dave,
+      .corrina {
+        width: 100%;
+        height: 250px;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">MisstaGogue</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            <a class="nav-link" href="/mymods.html">My Mods</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3 mainContent" id="mainContent">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card">
+              <div id="dave" class="dave"></div>
+              <div class="card-body">
+                <p class="lead">Dave</p>
+                <p class="card-text">
+                  Irrationally angry at a consistency that's honestly
+                  impressive. Enjoys everything from AAA to shockingly
+                  poor-quality Indie. Generally found inebriated, less generally
+                  found attractive. (BTW one of the best people i met - SID)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div id="amk" class="amk"></div>
+
+              <div class="card-body">
+                <p class="lead">AMK</p>
+                <p class="card-text">
+                  AMK is the baby mod of the stream. one of the most interesting
+                  people. He look like this cause I DON'T KNOW HOW HE LOOKS
+                  LIKE. (But seriously one of most lovely human bean - SID)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div id="roy" class="roy"></div>
+
+              <div class="card-body">
+                <p class="lead">Roy</p>
+                <p class="card-text">
+                  Roy likes to stream woodcarving and chat with the community
+                  over some lofi vibes. (You should go follow him
+                  <b>@royger_that</b>
+                  on twitch - SID) :)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col">
+            <div class="card">
+              <div id="corrina" class="corrina"></div>
+
+              <div class="card-body">
+                <p class="lead">Corrina</p>
+                <p class="card-text">
+                  Corrina here (she/they). I stream tarot, sometimes I sing!
+                  Self-partnered Aquarius/Ravenclaw. SHE loves celery. (She is
+                  nice as well - SID)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>
+          Testing Website for
+          <a href="https://www.twitch.tv/Misstagogue" class="text-white"
+            >Misstagogue</a
+          >, by <a href="#" class="text-white">Sid</a>.
+        </p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+    <script type="module" src="./GLTFScriptMods.js"></script>
+  </body>
+</html>
