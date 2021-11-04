@@ -72,7 +72,7 @@ function initDave() {
 
   const ambient = new THREE.AmbientLight(0x404040, 2);
   sceneDave.add(ambient);
-  sceneDave.scale.set(6, 6, 6);
+  sceneDave.scale.set(3.5, 3.5, 3.5);
 
   const lightDave = new THREE.DirectionalLight(0xffffff, 2);
   lightDave.position.set(15, 60, 25);
