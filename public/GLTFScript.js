@@ -40,7 +40,7 @@ function init() {
 
   //Load Model
   let loader = new THREE.GLTFLoader();
-  loader.load("./asset/aboutme/gogue_v2.glb", function (gltf) {
+  loader.load("./asset/aboutme/gogue_v3.glb", function (gltf) {
     scene.add(gltf.scene);
     gogue = gltf.scene.children[0];
     animate();
