@@ -114,7 +114,7 @@ function initRoy() {
 
   const ambient = new THREE.AmbientLight(0x404040, 2);
   sceneRoy.add(ambient);
-  sceneRoy.scale.set(1.5, 1.5, 1.5);
+  sceneRoy.scale.set(2, 2, 2);
 
   const lightRoy = new THREE.DirectionalLight(0xffffff, 2);
   lightRoy.position.set(15, 60, 25);
